@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+            <h1 style="text-align: center;">SWIFT INVENTORY MANAGEMENT</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Dashboard.html">Dashboard</a></li><br>
+                <li><a href="Add item.html">Add item</a></li><br>
+                <li><a href="edit item.html">Edit item</a></li><br>
+                <li><a href="reports.html">Reports</a></li><br>
+                
+                <li><a href="settings.html">Settings</a></li><br>
+                <li><a href="index.html">Sign up</a></li><br>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Settings</h1>
+        <!-- Settings page content -->
+        <p>Manage your account settings here.</p>
+    </div>
+    <main>
+        <section id="accountSettings">
+            <div class="container">
+                <h2>Account Settings</h2>
+                <!-- Account settings form -->
+                <form id="accountSettingsForm">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" value= >
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" value= >
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="notifications">
+            <div class="container">
+                <h2>Notification Settings</h2>
+                <!-- Notification settings options -->
+                <div class="notification-option">
+                    <input type="checkbox" id="emailNotifications" name="emailNotifications" checked>
+                    <label for="emailNotifications">Receive Email Notifications</label>
+                </div>
+                <div class="notification-option">
+                    <input type="checkbox" id="smsNotifications" name="smsNotifications">
+                    <label for="smsNotifications">Receive SMS Notifications</label>
+                </div>
+            </div>
+        </section>
+
+        <section id="systemSettings">
+            <div class="container">
+                <h2>System Settings</h2>
+                <!-- System settings options -->
+                <div class="system-option">
+                    <label for="timezone">Timezone:</label>
+                    <select id="timezone" name="timezone">
+                        <option value="GMT-8">GMT-8 (Pacific Time)</option>
+                        <option value="GMT-5">GMT-5 (Eastern Time)</option>
+                        <option value="GMT+0" selected>GMT+0 (UTC)</option>
+                        <!-- Add more timezone options as needed -->
+                    </select>
+                </div>
+                <div class="system-option">
+                    <input type="checkbox" id="autoBackup" name="autoBackup" checked>
+                    <label for="autoBackup">Enable Automatic Backups</label>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Inventory Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script src="script.js"></script>
+</body>
+</html>

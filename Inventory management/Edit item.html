@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+            <h1 style="text-align: center;">SWIFT INVENTORY MANAGEMENT</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Dashboard.html">Dashboard</a></li><br>
+                <li><a href="Add item.html">Add item</a></li><br>
+                <li><a href="edit item.html">Edit item</a></li><br>
+                <li><a href="reports.html">Reports</a></li><br>
+                
+                <li><a href="settings.html">Settings</a></li><br>
+                <li><a href="index.html">Sign up</a></li><br>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Edit Item</h1>
+        <p> Our website enables users to edit the items when needed and record the amount daily after sales.<p><br>
+            <p2> The following parameters can be changed when new stock arrives.</p2><br>
+        <!-- Form to edit item details -->
+        <form id="editItemForm">
+            <label for="editItemName">Item Name:</label>
+            <input type="text" id="editItemName" name="editItemName" required>
+            <label for="editItemQuantity">Quantity:</label>
+            <input type="number" id="editItemQuantity" name="editItemQuantity" required>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Item</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+            <h1 style="text-align: center;">SWIFT INVENTORY MANAGEMENT</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Dashboard.html">Dashboard</a></li><br>
+                <li><a href="Add item.html">Add item</a></li><br>
+                <li><a href="edit item.html">Edit item</a></li><br>
+                <li><a href="reports.html">Reports</a></li><br>
+                
+                <li><a href="settings.html">Settings</a></li><br>
+                <li><a href="index.html">Sign up</a></li><br>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Add New Item</h1>
+        <p> New items bought can be added to the system an drecords are updated appropriately to ensure accuracy.</p><br>
+        <p2> The following parameters can be changed when new stock arrives.</p2><br>
+        <!-- Form to add new item -->
+        <form id="addItemForm">
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" name="itemName" required>
+            <label for="itemQuantity">Quantity:</label>
+            <input type="number" id="itemQuantity" name="itemQuantity" required>
+            <button type="submit">Add Item</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+            <h1 style="text-align: center;">SWIFT INVENTORY MANAGEMENT</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Dashboard.html">Dashboard</a></li><br>
+                <li><a href="Add item.html">Add item</a></li><br>
+                <li><a href="edit item.html">Edit item</a></li><br>
+                <li><a href="reports.html">Reports</a></li><br>
+                
+                <li><a href="settings.html">Settings</a></li><br>
+                <li><a href="index.html">Sign up</a></li><br>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Reports</h1>
+        <!-- Display reports and analytics -->
+        <p>Reports will be displayed here.</p>
+        <p2>The following is an overview example of the reports generated at the end of the day sales and new stock arrivals.</p2><br>
+    </div>
+     <main>
+        <section id="salesReport">
+            <div class="container">
+                <h2>Sales Report</h2>
+                <!-- Sales report content -->
+                <div class="report-content">
+                    <div class="report-filter">
+                        <label for="startDate">Start Date:</label>
+                        <input type="date" id="startDate" name="startDate">
+                        <label for="endDate">End Date:</label>
+                        <input type="date" id="endDate" name="endDate">
+                        <button onclick="generateSalesReport()">Generate Report</button>
+                    </div>
+                    <div id="salesReportResult">
+                        <!-- Sales report results will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inventoryReport">
+            <div class="container">
+                <h2>Inventory Report</h2>
+                <!-- Inventory report content -->
+                <div class="report-content">
+                    <div class="report-filter">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing</option>
+                            <!-- Add more categories as needed -->
+                        </select>
+                        <button onclick="generateInventoryReport()">Generate Report</button>
+                    </div>
+                    <div id="inventoryReportResult">
+                        <!-- Inventory report results will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Styling the navbar */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: royalblue;
+    padding: 10px 0;
+}
+
+/* Styling each nav item */
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: lightgreen;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    border: 2px dotted #D258F6;
+}
+
+.header-container img {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.header-container h1 {
+    color: lightgreen;
+}
+
+.section{
+  width: 90%;
+  border: 3px solid lightgreen;
+  margin: 0px auto;
+  padding:10px;
+}
+
+.footer-container{
+  background-color: lightgreen;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.aside-container{
+  background-color: #f9e6ff;
+  width: 85%;
+  border: 3px solid #e799ff;
+  margin-left: 5px;
+  padding:10px;
+}
+
+.article-container{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#messageArea{
+    border: 1px solid royalblue;
+    border-radius: 10px;
+}
+
+.submitBtn{
+    background-color: royalblue;
+    color: white;
+    font-size: 20px;
+}
+/* In styles.css */
+body {
+  background-color:turquoise;
+}
+/* Reset some default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,56 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for desktop screens (min-width: 901px)*/
+.navbar {
+	background-color: lightgrey;
+	width: 100%;
+	}
+
+.navbar div{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+	
+	.brandname {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.brandname a {
+		text-decoration: none;
+		color: black;
+	}
+
+
+	.loginregisterdiv{
+		text-align: center;
+		background-color: white;
+		padding: 0.09%;
+		width: 50%;
+		height: 70%;
+		margin: auto;
+		}
+		
+		.loginregisterform{
+		height: 70%;
+		width: 50%;
+		background-color: lightgrey;
+		text-align: center;
+		margin: auto;
+		border-radius: 10px;
+		}
+		
+		.loginregisterdiv input, select, textarea {
+			
+			width: 195px;
+			border: 5px solid lightgrey;
+			
+			-ms-box-sizing:content-box;
+			-moz-box-sizing:content-box;
+			box-sizing:content-box;
+			-webkit-box-sizing:content-box;
+		}
